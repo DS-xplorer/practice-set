@@ -1,0 +1,27 @@
+#Q1 Create a Pandas Series that contains the following data: 4, 8, 15, 16, 23, and 42. Then, print the series.
+import pandas as pd
+s=pd.Series([4, 8, 15, 16, 23,42])
+print(s)
+
+# Q2 Create a variable of list type containing 10 elements in it, and apply pandas.Series function on the variable print it.
+import pandas as pd
+l=[1,2,3,4,5,6,7,8,9,0]
+print(pd.Series(l))
+
+# Q3 Create a Pandas DataFrame and then print the DataFrame.
+import pandas as pd
+data={"name":["alice","bob","claire"],
+      "age":[25,30,27],
+      "gender":["female","male","female"]
+}
+
+df=pd.DataFrame(data)
+print(df)
+
+# Q4 Create a DataFrame using multiple Series. Explain with an example.
+
+import pandas as pd 
+s1=pd.Series([1,2,3,4],index=["a","b","c","d"], name="x")
+s2=pd.Series([5,6,7,8],index=["a","b","c","d"],name="y")
+df=pd.DataFrame({s1.name:s1,s2.name:s2})
+print(df)
