@@ -1,1 +1,1 @@
-these files contain the basic of python and basics questions to start any pyhton journey
+these files contain the basics of python and basic questions to start the journey in python
